@@ -1,0 +1,97 @@
+{
+  "start_date": "2026-06-04",
+  "raw_json": {
+    "data": {
+      "hospital_name": "Phòng khám",
+      "patient_name": "Trần Trung",
+      "patient_gender": "Nam",
+      "diagnose": "Dạ dày",
+      "table_information": [
+        {
+          "no": 1,
+          "medicine_name": "YESOM 40 40mg (Esomeprazol 40mg)",
+          "medicine_count": "9 Viên",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1 Viên, Trưa 1 Viên, Tối 1 Viên",
+            "use": "Uống",
+            "type": "Viên",
+            "guide_morning": "1 Viên",
+            "guide_noon": "1 Viên",
+            "guide_afternoon": "",
+            "guide_evening": "1 Viên"
+          }
+        },
+        {
+          "no": 2,
+          "medicine_name": "SUCRATE GEL (Sucralfate 1g (gói))",
+          "medicine_count": "9 Gói",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1 Gói, Trưa 1 Gói, Tối 1 Gói",
+            "use": "Uống",
+            "type": "Gói",
+            "guide_morning": "1 Gói",
+            "guide_noon": "1 Gói",
+            "guide_afternoon": "",
+            "guide_evening": "1 Gói"
+          }
+        },
+        {
+          "no": 3,
+          "medicine_name": "ARTHUR (Trimebutine 200)",
+          "medicine_count": "9 Viên",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1 Viên, Trưa 1 Viên, Tối 1 Viên",
+            "use": "Uống",
+            "type": "Viên",
+            "guide_morning": "1 Viên",
+            "guide_noon": "1 Viên",
+            "guide_afternoon": "",
+            "guide_evening": "1 Viên"
+          }
+        },
+        {
+          "no": 4,
+          "medicine_name": "PAPAZE (Magnesi aluminometasilicate,na bicarbonate,cao scopolia,alpha amylase,beta amulase,protease)",
+          "medicine_count": "9 Viên",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1 Viên, Trưa 1 Viên, Tối 1 Viên",
+            "use": "Uống",
+            "type": "Viên",
+            "guide_morning": "1 Viên",
+            "guide_noon": "1 Viên",
+            "guide_afternoon": "",
+            "guide_evening": "1 Viên"
+          }
+        },
+        {
+          "no": 5,
+          "medicine_name": "BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g, Magnesi Hydroxide 100ml)",
+          "medicine_count": "3 ml",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1/3 ml, Trưa 1/3 ml, Tối 1/3 ml",
+            "use": "Uống",
+            "type": "ml",
+            "guide_morning": "1/3 ml",
+            "guide_noon": "1/3 ml",
+            "guide_afternoon": "",
+            "guide_evening": "1/3 ml"
+          }
+        },
+        {
+          "no": 6,
+          "medicine_name": "DIGLUMISAN (L-Arginine Hydrochloride 1000mg)",
+          "medicine_count": "9 Ống",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1 Ống, Trưa 1 Ống, Tối 1 Ống",
+            "use": "Uống",
+            "type": "Ống",
+            "guide_morning": "1 Ống",
+            "guide_noon": "1 Ống",
+            "guide_afternoon": "",
+            "guide_evening": "1 Ống"
+          }
+        }
+      ]
+    }
+  }
+}

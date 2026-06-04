@@ -1,6 +1,6 @@
 import uuid
 from fastapi import APIRouter, UploadFile, File, Query, HTTPException
-from fastapi.responses import Response
+from fastapi.responses import JSONResponse, Response
 from app.repositories.json_repository import JsonRepository
 from app.services.ocr_service import (
     OcrConfigurationError,
@@ -19,6 +19,41 @@ ocr_service = OcrService()
 normalizer = PrescriptionNormalizer()
 view_builder = ViewBuilderService()
 calendar_service = CalendarService()
+
+
+def _build_ocr_error_response(
+    *,
+    status_code: int,
+    error_code: str,
+    message: str,
+    retryable: bool,
+    prescription_id: str | None = None,
+):
+    ui_payload = {
+        "screen": "ocr_error",
+        "title": "Khong the xu ly anh don thuoc",
+        "message": message,
+        "retryable": retryable,
+        "error_code": error_code,
+        "suggestions": [
+            "Thu lai voi anh ro hon, du anh sang va khong bi mo.",
+            "Dat don thuoc thang khung hinh, tranh mat goc va bong den.",
+            "Neu van loi, chuyen sang Demo bang JSON de tiep tuc test UI.",
+        ],
+    }
+    return JSONResponse(
+        status_code=status_code,
+        content={
+            "success": False,
+            "prescription_id": prescription_id,
+            "error": {
+                "code": error_code,
+                "message": message,
+                "retryable": retryable,
+            },
+            "ui_payload": ui_payload,
+        },
+    )
 
 
 @router.post("/ocr")
@@ -41,15 +76,36 @@ async def ocr_prescription(
     try:
         raw_json = ocr_service.extract_prescription(image_path)
     except OcrConfigurationError as exc:
-        raise HTTPException(status_code=503, detail=str(exc)) from exc
+        return _build_ocr_error_response(
+            status_code=503,
+            error_code="OCR_CONFIGURATION_ERROR",
+            message=str(exc),
+            retryable=False,
+            prescription_id=prescription_id,
+        )
     except OcrProviderError as exc:
-        raise HTTPException(status_code=502, detail=str(exc)) from exc
+        return _build_ocr_error_response(
+            status_code=502,
+            error_code="OCR_PROVIDER_ERROR",
+            message=str(exc),
+            retryable=True,
+            prescription_id=prescription_id,
+        )
 
     prescription = normalizer.normalize(
         raw_json=raw_json,
         start_date=start_date,
         prescription_id=prescription_id,
     )
+
+    if not prescription.medicines:
+        return _build_ocr_error_response(
+            status_code=422,
+            error_code="OCR_EMPTY_RESULT",
+            message="Khong doc duoc thong tin thuoc tu anh nay. Vui long thu anh ro hon hoac doi anh khac.",
+            retryable=True,
+            prescription_id=prescription_id,
+        )
 
     repo.save_raw(prescription_id, raw_json)
     repo.save_normalized(prescription_id, prescription.model_dump())

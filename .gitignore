@@ -2,3 +2,23 @@
 node_modules/
 .env
 *.log
+
+# Environments
+.venv*/
+.venv_api/
+.venv_ui/
+.idea/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Data
+codebase/data/uploads/*
+!codebase/data/uploads/.gitkeep
+codebase/data/raw/*
+!codebase/data/raw/.gitkeep
+codebase/data/normalized/*
+!codebase/data/normalized/.gitkeep
+codebase/data/calendar/*
+!codebase/data/calendar/.gitkeep

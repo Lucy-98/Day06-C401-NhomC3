@@ -1,4 +1,53 @@
-## 1. Mục tiêu
+# SPEC Sản Phẩm: Tính năng Nhắc dùng thuốc (App Nhà thuốc Long Châu)
+
+## 1. Bằng chứng
+
+**Nỗi đau của người dùng:**
+- **Trải nghiệm trực tiếp:** Khi nhận đơn thuốc từ bệnh viện hoặc mua thuốc tại nhà thuốc, người dùng thường phải tự nhớ lịch uống thuốc hoặc tự cài báo thức bằng tay. Việc nhập liệu thủ công từng loại thuốc, số lượng, và giờ uống (sáng/trưa/chiều/tối) rất mất thời gian và dễ dẫn đến sai sót hoặc lười biếng bỏ dở.
+- **Quan sát bên ngoài:** Khách hàng người cao tuổi thường xuyên quên uống thuốc hoặc nhầm lẫn liều lượng (như chia liều, uống khi cần) do các đơn thuốc ghi chú phức tạp. Các ứng dụng nhắc thuốc hiện tại trên thị trường thường bắt người dùng nhập tay toàn bộ thông tin từ đầu, tạo rào cản lớn khi bắt đầu sử dụng.
+
+## 2. Lát cắt để build
+
+**Một người dùng (bệnh nhân/người nhà)** chụp ảnh đơn thuốc, **AI tự động trích xuất thông tin (OCR)** và **gợi ý lịch uống thuốc chi tiết**, sau đó người dùng kiểm tra lại và **lưu lịch nhắc nhở thẳng vào Calendar của điện thoại** một cách nhanh chóng.
+
+## 3. AI Product Canvas
+
+| Ô | Trả lời |
+|---|---------|
+| **Value (Giá trị)** | Giúp người bệnh (đặc biệt khách hàng của Long Châu) tiết kiệm thời gian tạo lịch nhắc uống thuốc, giảm thiểu việc quên thuốc hoặc uống sai liều. AI giải quyết khâu nhập liệu thủ công nhàm chán và phức tạp. |
+| **Trust (Niềm tin)** | AI chỉ đóng vai trò "người nhập liệu hộ". Toàn bộ thông tin AI đọc được sẽ hiển thị rõ ràng trên UI màn hình "Tạo đơn" để người dùng đối chiếu với ảnh gốc và tự do chỉnh sửa trước khi xuất lịch hẹn. |
+| **Feasibility (Tính khả thi)** | Rất khả thi. Sử dụng Google Gemini 2.5 Flash xử lý OCR cực kỳ nhanh và xuất dữ liệu định dạng JSON có cấu trúc rất tốt. Việc tạo file `.ics` cũng đơn giản và được hỗ trợ native trên iOS/Android. |
+| **Tín hiệu học** | Bất cứ khi nào người dùng chỉnh sửa (sửa tên thuốc, liều lượng) thay vì chấp nhận kết quả OCR mặc định, dữ liệu đó có thể được lưu lại (feedback loop) để đánh giá độ chính xác của model và cải thiện prompt. |
+
+## 4. Tăng năng lực hay tự động hóa
+
+**Quyết định: Tăng năng lực (Augment).**
+- **Lý do:** Y tế là lĩnh vực nhạy cảm, việc tự động hóa (automate) tạo báo thức mà không có sự kiểm duyệt của con người có thể gây hậu quả nghiêm trọng nếu AI đọc sai liều (ví dụ 1/2 viên thành 12 viên).
+- **Phạm vi của AI:** AI chỉ "gợi ý và chuẩn bị" form dữ liệu. Con người luôn giữ quyền quyết định ở bước kiểm tra bảng nhắc và bấm nút "Lưu giờ nhắc".
+
+## 5. Bốn đường đi của trải nghiệm
+
+| Đường đi | Xử lý |
+|----------|-------|
+| **Đường thuận** | AI đọc chính xác 100% đơn thuốc rõ ràng -> UI hiển thị chuẩn các slot Sáng/Trưa/Chiều/Tối -> Người dùng chỉ việc kiểm tra và bấm "Lưu giờ nhắc". |
+| **Khi AI không chắc** | Gặp thuốc có ghi chú đặc biệt ("uống khi sốt", "chia 2 lần") -> AI phân loại vào nhóm `as_needed` (khi cần) hoặc `divided_dose` và hiện cảnh báo để người dùng chú ý tinh chỉnh thêm. |
+| **Khi AI sai** | AI nhận diện sai chữ viết tay -> Người dùng trực tiếp ấn vào ô dữ liệu trên giao diện màn "Tạo đơn" để gõ lại cho đúng. |
+| **Khi người dùng sửa** | Dữ liệu người dùng sửa khác với file raw JSON ban đầu -> Log lại sự kiện này trên backend để tracking tỷ lệ lỗi của OCR, làm cơ sở cải thiện trong tương lai. |
+
+## 6. Những kiểu lỗi đáng lo nhất
+
+1. **Sai liều lượng nghiêm trọng:** 
+   - *Khi nào:* AI nhầm lẫn các ký tự số (ví dụ 1/4 thành 14) do chữ viết tay bác sĩ xấu hoặc bị mờ.
+   - *Hậu quả:* Người bệnh có thể uống quá liều gây ngộ độc.
+   - *Xử lý (Prototype):* Backend có logic chuẩn hóa `PrescriptionNormalizer` để xử lý phân số. Giao diện luôn bắt buộc người dùng xem lại bảng tóm tắt lịch uống và có thể đưa ra cảnh báo nếu liều lượng một lần uống bất thường.
+2. **Nhận diện sai loại lịch uống (Schedule Mode):** 
+   - *Khi nào:* Lời dặn "Uống cách ngày" nhưng AI lại cho vào lịch uống hàng ngày.
+   - *Hậu quả:* Uống sai phác đồ điều trị.
+   - *Xử lý:* Cung cấp tùy chọn cho phép người dùng tự đổi loại lịch (Cố định, Khi cần, v.v.).
+
+## 7. Kế hoạch kiểm thử và bằng chứng demo
+
+### 7.1. Mục tiêu
  
 **Mục tiêu:**
 Xác minh tính năng Auto-fill từ ảnh đơn thuốc hoạt động chính xác, giảm thiểu số lượt chạm của người dùng và lập lịch nhắc nhở uống thuốc.
@@ -8,7 +57,7 @@ Hệ thống hiển thị đúng luồng giao diện, đổ dữ liệu chuẩn 
  
 ---
  
-## 2. Phạm vi Kiểm thử (In-Scope & Out-of-Scope)
+### 7.2. Phạm vi Kiểm thử (In-Scope & Out-of-Scope)
  
 **✅ In-Scope (Sẽ test):**
 - Luồng upload ảnh
@@ -24,14 +73,14 @@ Hệ thống hiển thị đúng luồng giao diện, đổ dữ liệu chuẩn 
  
 ---
  
-## 3. Môi trường & Công cụ test
+### 7.3. Môi trường & Công cụ test
  
 Tập trung vào **Black Box** và **Grey Box**, quá trình kiểm thử sẽ thực hiện trực tiếp trên giao diện và luồng mạng cơ bản thay vì can thiệp vào mã nguồn.
  
-### Môi trường
+#### Môi trường
 - Trình duyệt chạy trên localhost
 - Môi trường mạng thay đổi (Wifi ổn định vs. 4G yếu) để test trạng thái Loading
-### Tools
+#### Tools
 - **Thiết bị** để test tính năng mở Camera chụp ảnh
 - **Bộ dữ liệu Test (Dataset):** Các file ảnh đơn thuốc thực tế bao gồm:
   - Ảnh rõ nét in máy
@@ -39,18 +88,18 @@ Tập trung vào **Black Box** và **Grey Box**, quá trình kiểm thử sẽ t
   - Ảnh chữ bác sĩ viết tay cực ngoáy
 ---
  
-## 4. Chiến lược Kiểm thử (Test Strategy)
+### 7.4. Chiến lược Kiểm thử (Test Strategy)
  
 Chiến lược kiểm thử sẽ không đi sâu vào code (White Box) mà tập trung vào việc đánh giá trải nghiệm đầu ra và kiểm soát rủi ro luồng AI.
  
-### Kiểm thử Hộp đen (Black Box Testing — Đánh giá UX/UI)
+#### Kiểm thử Hộp đen (Black Box Testing — Đánh giá UX/UI)
  
 Đóng vai trò là một người bệnh nhân sử dụng app. Chỉ tương tác qua giao diện (bấm nút, upload ảnh, xem màn hình form).
  
 **Mục đích:**
 Xác minh hệ thống có thực sự giải quyết được bài toán giảm số lượt chạm (clicks) từ **15–20 xuống còn 1–2 click** hay không. Đảm bảo form hiển thị đầy đủ và nút bấm hoạt động bình thường.
  
-### Kiểm thử Hộp xám (Grey Box Testing — Đánh giá Logic AI & Rủi ro)
+#### Kiểm thử Hộp xám (Grey Box Testing — Đánh giá Logic AI & Rủi ro)
  
 Sử dụng sự hiểu biết về thiết kế hệ thống (VD: biết rằng Prompt đã thiết lập AI phải trả về `null` nếu chữ quá xấu) kết hợp với thao tác người dùng.
  
@@ -60,9 +109,9 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 - App có tự động đoán mò sai liều lượng thuốc hay không
 ---
  
-## 5. Danh sách Kịch bản Kiểm thử chi tiết (Test Cases)
+### 7.5. Danh sách Kịch bản Kiểm thử chi tiết (Test Cases)
 
-## TC01 — Auto-fill với ảnh đơn thuốc in máy rõ nét (Happy Path)
+#### TC01 — Auto-fill với ảnh đơn thuốc in máy rõ nét (Happy Path)
 
 | Field | Detail |
 |-------|--------|
@@ -74,7 +123,7 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 
 ---
 
-## TC02 — Bóc tách dữ liệu từng mặt hàng riêng lẻ (Multiple Products)
+#### TC02 — Bóc tách dữ liệu từng mặt hàng riêng lẻ (Multiple Products)
 
 | Field | Detail |
 |-------|--------|
@@ -91,7 +140,7 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 
 ---
 
-## TC03 — Xử lý chữ viết tay không thể đọc được
+#### TC03 — Xử lý chữ viết tay không thể đọc được
 
 | Field | Detail |
 |-------|--------|
@@ -108,7 +157,7 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 
 ---
 
-## TC04 — Tải lên hình ảnh không phải đơn thuốc
+#### TC04 — Tải lên hình ảnh không phải đơn thuốc
 
 | Field | Detail |
 |-------|--------|
@@ -125,7 +174,7 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 
 ---
 
-## TC05 — Trạng thái Loading (Perception)
+#### TC05 — Trạng thái Loading (Perception)
 
 | Field | Detail |
 |-------|--------|
@@ -142,7 +191,7 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 
 ---
 
-## TC6 — Tính toàn vẹn cấu trúc JSON trả về (White-box/Backend)
+#### TC6 — Tính toàn vẹn cấu trúc JSON trả về (White-box/Backend)
 
 | Field | Detail |
 |-------|--------|
@@ -202,9 +251,9 @@ Cố tình tiêm các "dữ liệu độc" (ảnh mờ, ảnh chụp sai chủ t
 ```
 ---
 
-## 6. Scenerio Test
+### 7.6. Scenerio Test
 
-## Kịch bản 1: Trải nghiệm Lý tưởng (The Happy Path — Đơn thuốc tiêu chuẩn)
+#### Kịch bản 1: Trải nghiệm Lý tưởng (The Happy Path — Đơn thuốc tiêu chuẩn)
 
 | Field | Detail |
 |-------|--------|
@@ -224,7 +273,7 @@ Báo thức được thiết lập thành công vào hệ thống. Số thao tá
 
 ---
 
-## Kịch bản 2: Trải nghiệm Chỉnh sửa thủ công (Human-in-the-loop cơ bản)
+#### Kịch bản 2: Trải nghiệm Chỉnh sửa thủ công (Human-in-the-loop cơ bản)
 
 | Field | Detail |
 |-------|--------|
@@ -244,8 +293,18 @@ Báo thức được thiết lập thành công vào hệ thống. Số thao tá
 
 ---
 
-## 7. Kết luận
+### 7.7. Kết luận
 
 **Điểm sáng**: Luồng Auto-fill cơ bản hoạt động rất tốt. AI trích xuất và đổ dữ liệu JSON chính xác cho từng loại thuốc riêng biệt (TC01, TC02, TC04-TC06 PASS).
 
 **Cần khắc phục**: Nhận diện đơn thuốc trước chữ viết tay mờ/ngoáy (TC03 FAIL) chưa thành công, cần cải thiện tiếp.
+
+
+## 8. Phân công
+
+1. Lê Quang Minh - 2A202600801         : Build BE
+2. Nông Đức Hoàng - 2A202600580        : QA + Test
+3. Nguyễn Đức Minh - 2A202600604       : Build FE
+4. Lưu Xuân Thế - 2A202600983          : Build AI logic
+5. Nguyễn Quang Anh - 2A202600608      : Report + Slide + fix UI
+6. Lương Thị Hồng Nhung - 2A202600811  : Build BE
