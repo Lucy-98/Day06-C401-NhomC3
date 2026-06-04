@@ -1,0 +1,53 @@
+{
+  "start_date": "2026-06-04",
+  "raw_json": {
+    "data": {
+      "hospital_name": "Bệnh viện Nhi Trung Ương",
+      "patient_name": "NGUYỄN THỊ THANH NH",
+      "patient_gender": "Nữ",
+      "diagnose": "phù nề bao quai đầu",
+      "table_information": [
+        {
+          "no": 1,
+          "medicine_name": "Cerepone Dry 125mg/5ml (Cefprozil 125mg/5ml)",
+          "medicine_count": "15 Túi",
+          "medicine_guide": {
+            "summary": "Ngày uống 1.5 gói, chia 2 lần",
+            "use": "Uống",
+            "type": "Túi"
+          }
+        },
+        {
+          "no": 2,
+          "medicine_name": "Ibufen D 100 mg/5ml, 120ml (Ibuprofen)",
+          "medicine_count": "1 Lọ",
+          "medicine_guide": {
+            "summary": "Uống 2.5 ml khi sốt >= 38.5 độ cách 4-6 h",
+            "use": "Uống",
+            "type": "Lọ"
+          }
+        },
+        {
+          "no": 4,
+          "medicine_name": "Kidafort 60ml (Sắt, Vitamin, AcidAmin....)",
+          "medicine_count": "1 Lọ",
+          "medicine_guide": {
+            "summary": "Ngày uống 7ml chia 2 lần.",
+            "use": "Uống",
+            "type": "Lọ"
+          }
+        },
+        {
+          "no": 5,
+          "medicine_name": "Calciumgeral 150 ml (Calcium, Vitamin D3)",
+          "medicine_count": "1 Lọ",
+          "medicine_guide": {
+            "summary": "ngày uống 10ml chia 2 lần.",
+            "use": "Uống",
+            "type": "Lọ"
+          }
+        }
+      ]
+    }
+  }
+}
