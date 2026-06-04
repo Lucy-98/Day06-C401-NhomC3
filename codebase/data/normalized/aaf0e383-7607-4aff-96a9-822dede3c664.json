@@ -1,0 +1,141 @@
+{
+  "id": "aaf0e383-7607-4aff-96a9-822dede3c664",
+  "title": "phù nề bao quai đầu",
+  "hospital_name": "Bệnh viện Nhi Trung Ương",
+  "patient_name": "NGUYỄN THỊ THANH NH",
+  "patient_gender": "Nữ",
+  "patient_address": null,
+  "diagnose": "phù nề bao quai đầu",
+  "start_date": "2026-06-04",
+  "prescription_days": 15,
+  "end_date": "2026-06-18",
+  "medicines": [
+    {
+      "no": 1,
+      "medicine_name": "Cerepone Dry 125mg/5ml (Cefprozil 125mg/5ml)",
+      "route": "Uống",
+      "unit": "ml",
+      "raw_total": "15 Túi",
+      "total_amount": 15,
+      "raw_summary": "Ngày uống 1.5 gói, chia 2 lần",
+      "schedule_mode": "divided_dose",
+      "schedule": {
+        "morning": 0.75,
+        "evening": 0.75
+      },
+      "daily_total": 1.5,
+      "duration_days": 4,
+      "meal_timing": null,
+      "display_note": null,
+      "display_dose": "Sáng 3/4 ml, Tối 3/4 ml",
+      "times_per_day": 2,
+      "amount_per_intake": 0.75,
+      "amount_text": "3/4",
+      "suggested_slots": [
+        "morning",
+        "evening"
+      ],
+      "bottle_volume_ml": 5,
+      "condition": null,
+      "min_interval_hours": null,
+      "max_interval_hours": null,
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "no": 2,
+      "medicine_name": "Ibufen D 100 mg/5ml, 120ml (Ibuprofen)",
+      "route": "Uống",
+      "unit": "ml",
+      "raw_total": "1 Lọ",
+      "total_amount": 1,
+      "raw_summary": "Uống 2.5 ml khi sốt >= 38.5 độ cách 4-6 h",
+      "schedule_mode": "as_needed",
+      "schedule": {},
+      "daily_total": null,
+      "duration_days": null,
+      "meal_timing": null,
+      "display_note": "Khi sốt ≥ 38.5°C, Cách 4–6 giờ nếu cần",
+      "display_dose": "Uống 2.5 ml khi sốt >= 38.5 độ cách 4-6 h",
+      "times_per_day": null,
+      "amount_per_intake": 2.5,
+      "amount_text": "2.5",
+      "suggested_slots": [],
+      "bottle_volume_ml": null,
+      "condition": "Khi sốt ≥ 38.5°C",
+      "min_interval_hours": 4,
+      "max_interval_hours": 6,
+      "needs_review": true,
+      "warnings": [
+        "Thuốc dùng khi cần, không tạo lịch nhắc cố định."
+      ]
+    },
+    {
+      "no": 4,
+      "medicine_name": "Kidafort 60ml (Sắt, Vitamin, AcidAmin....)",
+      "route": "Uống",
+      "unit": "ml",
+      "raw_total": "1 Lọ",
+      "total_amount": 1,
+      "raw_summary": "Ngày uống 7ml chia 2 lần.",
+      "schedule_mode": "divided_dose",
+      "schedule": {
+        "morning": 3.5,
+        "evening": 3.5
+      },
+      "daily_total": 7,
+      "duration_days": 9,
+      "meal_timing": null,
+      "display_note": null,
+      "display_dose": "Sáng 3.5 ml, Tối 3.5 ml",
+      "times_per_day": 2,
+      "amount_per_intake": 3.5,
+      "amount_text": "3.5",
+      "suggested_slots": [
+        "morning",
+        "evening"
+      ],
+      "bottle_volume_ml": 60,
+      "condition": null,
+      "min_interval_hours": null,
+      "max_interval_hours": null,
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "no": 5,
+      "medicine_name": "Calciumgeral 150 ml (Calcium, Vitamin D3)",
+      "route": "Uống",
+      "unit": "ml",
+      "raw_total": "1 Lọ",
+      "total_amount": 1,
+      "raw_summary": "ngày uống 10ml chia 2 lần.",
+      "schedule_mode": "divided_dose",
+      "schedule": {
+        "morning": 5,
+        "evening": 5
+      },
+      "daily_total": 10,
+      "duration_days": 15,
+      "meal_timing": null,
+      "display_note": null,
+      "display_dose": "Sáng 5 ml, Tối 5 ml",
+      "times_per_day": 2,
+      "amount_per_intake": 5,
+      "amount_text": "5",
+      "suggested_slots": [
+        "morning",
+        "evening"
+      ],
+      "bottle_volume_ml": 150,
+      "condition": null,
+      "min_interval_hours": null,
+      "max_interval_hours": null,
+      "needs_review": false,
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    "Một số thuốc cần người dùng hoặc dược sĩ kiểm tra lại trước khi tạo lịch."
+  ]
+}

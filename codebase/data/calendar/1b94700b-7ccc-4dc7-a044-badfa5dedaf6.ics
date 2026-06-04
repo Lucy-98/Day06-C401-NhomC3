@@ -1,0 +1,132 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LongChau Mock//Medicine Reminder//VN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9b4d422-6c61-45ca-aaac-3f2354e9748a@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Uống 1 Viên - Amoxicillin + Sulbactam (Bactamox 750mg)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Amoxicillin + Sulbactam (Bactamox 750mg)\\nHướng dẫn: Uống mỗi ngày 2 lần\, mỗi lần 1 viên\\nSố ngày thuốc này: 5\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:6e81aa58-9b67-4216-94d7-c610d019665b@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T150000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Uống 1 Viên - Amoxicillin + Sulbactam (Bactamox 750mg)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Amoxicillin + Sulbactam (Bactamox 750mg)\\nHướng dẫn: Uống mỗi ngày 2 lần\, mỗi lần 1 viên\\nSố ngày thuốc này: 5\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:c09d36d0-4edc-45c0-8216-4b13c6ad7393@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Uống 1 Viên - Alpha chymotrypsin (CHYMODK 8\,4)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Alpha chymotrypsin (CHYMODK 8\,4)\\nHướng dẫn: Uống mỗi ngày 2 lần\, mỗi lần 1 viên\\nSố ngày thuốc này: 5\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:88bdfea5-c981-4dd9-9977-06d408044fd2@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T150000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Uống 1 Viên - Alpha chymotrypsin (CHYMODK 8\,4)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Alpha chymotrypsin (CHYMODK 8\,4)\\nHướng dẫn: Uống mỗi ngày 2 lần\, mỗi lần 1 viên\\nSố ngày thuốc này: 5\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:29f561ed-607c-4e6a-97d1-c5cd6538ca43@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=1
+SUMMARY:Uống 5 ml - Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)\\nHướng dẫn: Uống mỗi ngày 3 lần\, mỗi lần 5 ml\\nSố ngày thuốc này: 1\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:351c7b74-c970-424d-9efb-452d9d20bed9@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=1
+SUMMARY:Uống 5 ml - Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)\\nHướng dẫn: Uống mỗi ngày 3 lần\, mỗi lần 5 ml\\nSố ngày thuốc này: 1\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:d12ba152-9dcf-40ef-abc4-bf929870a670@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T150000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=1
+SUMMARY:Uống 5 ml - Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)\\nHướng dẫn: Uống mỗi ngày 3 lần\, mỗi lần 5 ml\\nSố ngày thuốc này: 1\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:a9217dee-5a83-4955-b820-f1cc170946b6@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Uống 1 Gói - Lactobacillus acidophilus\, Bifidobacteri (L-BIO-3D 300mg)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Lactobacillus acidophilus\, Bifidobacteri (L-BIO-3D 300mg)\\nHướng dẫn: Uống mỗi ngày 2 lần\, mỗi lần 1 gói\\nSố ngày thuốc này: 5\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:bbdd7ea2-dfaf-4cbe-8292-46c609c2b1bf@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T150000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Uống 1 Gói - Lactobacillus acidophilus\, Bifidobacteri (L-BIO-3D 300mg)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Lactobacillus acidophilus\, Bifidobacteri (L-BIO-3D 300mg)\\nHướng dẫn: Uống mỗi ngày 2 lần\, mỗi lần 1 gói\\nSố ngày thuốc này: 5\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:7ae2a47d-0e6f-420b-bfeb-493d35eb08be@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=4
+SUMMARY:Uống 1 Gói - Paracetamol (AGIMOL 325)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Paracetamol (AGIMOL 325)\\nHướng dẫn: Uống mỗi ngày 3 lần\, mỗi lần 1 gói\\nSố ngày thuốc này: 4\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:6b745456-7583-4442-bb3e-0a365f0188f3@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=4
+SUMMARY:Uống 1 Gói - Paracetamol (AGIMOL 325)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Paracetamol (AGIMOL 325)\\nHướng dẫn: Uống mỗi ngày 3 lần\, mỗi lần 1 gói\\nSố ngày thuốc này: 4\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:c6203b2c-77a0-4daa-a911-9cc33aff913e@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T150000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=4
+SUMMARY:Uống 1 Gói - Paracetamol (AGIMOL 325)
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Paracetamol (AGIMOL 325)\\nHướng dẫn: Uống mỗi ngày 3 lần\, mỗi lần 1 gói\\nSố ngày thuốc này: 4\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:7f562731-1bb3-4e85-812a-b578d4962145@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=1
+SUMMARY:Nhỏ 3 Lọ - Dexamethason natri phosphate\, Neomycin s (POEMA 10 mg+34.000 IU
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Dexamethason natri phosphate\, Neomycin s (POEMA 10 mg+34.000 IU\\nHướng dẫn: NHỎ TAI HAI BÊN. Nhỏ mỗi ngày 2 lần\, mỗi lần 3 giọt\\nSố ngày thuốc này: 1\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:67a22c14-1b0d-4fb2-92d3-66c744ebd53d@longchau-mock
+DTSTAMP:20260604T055430Z
+DTSTART:20260604T150000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=1
+SUMMARY:Nhỏ 3 Lọ - Dexamethason natri phosphate\, Neomycin s (POEMA 10 mg+34.000 IU
+DESCRIPTION:Đơn: H66.0 - Viêm tai giữa nung mủ cấp -VPQ\\nThuốc: Dexamethason natri phosphate\, Neomycin s (POEMA 10 mg+34.000 IU\\nHướng dẫn: NHỎ TAI HAI BÊN. Nhỏ mỗi ngày 2 lần\, mỗi lần 3 giọt\\nSố ngày thuốc này: 1\\n
+END:VEVENT
+END:VCALENDAR

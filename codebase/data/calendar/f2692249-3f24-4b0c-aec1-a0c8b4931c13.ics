@@ -1,0 +1,168 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LongChau Mock//Medicine Reminder//VN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1a36f982-7741-4f8c-bf88-ae8721b7c777@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - YESOM 40 40mg (Esomeprazol 40mg)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: YESOM 40 40mg (Esomeprazol 40mg)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:cfaaaffb-0bea-4b4e-8f0c-959fa774878f@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - YESOM 40 40mg (Esomeprazol 40mg)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: YESOM 40 40mg (Esomeprazol 40mg)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:978614c9-562f-49fd-a3f1-c3565e1ca4ff@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T210000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - YESOM 40 40mg (Esomeprazol 40mg)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: YESOM 40 40mg (Esomeprazol 40mg)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:0da4ad2c-a822-4f92-9c00-e3edb6163adc@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Gói - SUCRATE GEL (Sucralfate 1g (gói))
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: SUCRATE GEL (Sucralfate 1g (gói))\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 GÓI\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:66d5bcd8-9a7d-407e-8fb3-40dbf12715b9@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Gói - SUCRATE GEL (Sucralfate 1g (gói))
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: SUCRATE GEL (Sucralfate 1g (gói))\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 GÓI\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:4ff8918e-8e52-482d-b767-f57540534a75@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T210000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Gói - SUCRATE GEL (Sucralfate 1g (gói))
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: SUCRATE GEL (Sucralfate 1g (gói))\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 GÓI\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:23f0adab-ecdc-4639-b376-02dfe2acc662@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - ARTHUR (Trimebutine 200)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: ARTHUR (Trimebutine 200)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:37bc87c8-2053-4aae-bbaa-eba5bfd01deb@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - ARTHUR (Trimebutine 200)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: ARTHUR (Trimebutine 200)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:06f51434-2dd0-49a5-b18b-14f3941241ec@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T210000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - ARTHUR (Trimebutine 200)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: ARTHUR (Trimebutine 200)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:1b1d49ff-c250-4612-8c2e-466c0cb6c8a0@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - PAPAZE (magnesi aluminometasilicate \,na bicarbonate\,cao scopolia\,alpha amylase\,beta amuylase\,protease)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: PAPAZE (magnesi aluminometasilicate \,na bicarbonate\,cao scopolia\,alpha amylase\,beta amuylase\,protease)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:411636f0-5885-422f-a8af-a4188955a25d@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - PAPAZE (magnesi aluminometasilicate \,na bicarbonate\,cao scopolia\,alpha amylase\,beta amuylase\,protease)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: PAPAZE (magnesi aluminometasilicate \,na bicarbonate\,cao scopolia\,alpha amylase\,beta amuylase\,protease)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:bfd5f8be-53ec-4eb9-9c7b-98971ef75854@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T210000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Viên - PAPAZE (magnesi aluminometasilicate \,na bicarbonate\,cao scopolia\,alpha amylase\,beta amuylase\,protease)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: PAPAZE (magnesi aluminometasilicate \,na bicarbonate\,cao scopolia\,alpha amylase\,beta amuylase\,protease)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 Viên\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:d13b3c02-38cb-4f24-a724-41b2b44fe277@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1/3 ml - BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g\, Magnesi Hydroxide 100ml)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g\, Magnesi Hydroxide 100ml)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1/3 Chai\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:c9cb7264-1b3d-40b7-a821-8ec1b6f8769a@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1/3 ml - BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g\, Magnesi Hydroxide 100ml)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g\, Magnesi Hydroxide 100ml)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1/3 Chai\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:bdd7add3-68a7-49ab-b8e2-20fb3264b27c@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T210000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1/3 ml - BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g\, Magnesi Hydroxide 100ml)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g\, Magnesi Hydroxide 100ml)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1/3 Chai\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:cd5dea89-2110-4dab-9729-958e311fd7af@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T073000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Ống - DIGLUMISAN (L-Arginine Hydrochloride 1000mg)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: DIGLUMISAN (L-Arginine Hydrochloride 1000mg)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 ỐNG\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:23ce537f-08e9-4964-93b3-004834e058d1@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T120000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Ống - DIGLUMISAN (L-Arginine Hydrochloride 1000mg)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: DIGLUMISAN (L-Arginine Hydrochloride 1000mg)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 ỐNG\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+BEGIN:VEVENT
+UID:7b696d02-06e1-4c54-84b8-35506fdf4fa2@longchau-mock
+DTSTAMP:20260604T085115Z
+DTSTART:20260604T210000
+DURATION:PT10M
+RRULE:FREQ=DAILY;COUNT=21
+SUMMARY:uống 1 Ống - DIGLUMISAN (L-Arginine Hydrochloride 1000mg)
+DESCRIPTION:Đơn: Viêm dạ dày cấp khác\\nThuốc: DIGLUMISAN (L-Arginine Hydrochloride 1000mg)\\nHướng dẫn: Ngày uống 3 lần\, mỗi lần 1 ỐNG\\nSố ngày thuốc này: 21\\n
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,83 @@
+{
+  "id": "58c7bf56-7690-4f5a-8008-70620abc0b6b",
+  "title": "Thấp không ảnh hưởng đến tim",
+  "hospital_name": "SỞ Y TẾ THÀNH PHỐ ĐÀ NẴNG TRUNG TÂM Y TẾ QUẬN SƠN TRÀ",
+  "patient_name": "",
+  "patient_gender": "Nữ",
+  "patient_address": "Phường An Hải Đông, Quận Sơn Trà, Thành phố Đà Nẵng",
+  "diagnose": "Thấp không ảnh hưởng đến tim",
+  "start_date": "2026-06-04",
+  "prescription_days": 5,
+  "end_date": "2026-06-08",
+  "medicines": [
+    {
+      "no": 1,
+      "medicine_name": "Penicilin(dưới dạng Phenoxymethylpenicilin Kali) 400.000 UI (Penicilin (dưới dạng Phenoxy methyl penicilin kali))",
+      "route": "Uống",
+      "unit": "Viên",
+      "raw_total": "30",
+      "total_amount": 30,
+      "raw_summary": "Uống, Sáng 2 Viên, Trưa 2 Viên, Chiều 2 Viên -",
+      "schedule_mode": "fixed_schedule",
+      "schedule": {
+        "morning": 2,
+        "noon": 2,
+        "afternoon": 2,
+        "evening": 0
+      },
+      "daily_total": 6,
+      "duration_days": 5,
+      "meal_timing": null,
+      "display_note": null,
+      "display_dose": "Sáng 2 Viên, Trưa 2 Viên, Chiều 2 Viên",
+      "times_per_day": null,
+      "amount_per_intake": null,
+      "amount_text": null,
+      "suggested_slots": [],
+      "bottle_volume_ml": null,
+      "condition": null,
+      "min_interval_hours": null,
+      "max_interval_hours": null,
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "no": 2,
+      "medicine_name": "Paracetamol (acetaminophen) 500mg (Mypara 500)",
+      "route": "Uống",
+      "unit": "Viên",
+      "raw_total": "10",
+      "total_amount": 10,
+      "raw_summary": "Uống , Sáng 1 Viên , Chiều 1 Viên -",
+      "schedule_mode": "fixed_schedule",
+      "schedule": {
+        "morning": 1,
+        "noon": 0,
+        "afternoon": 1,
+        "evening": 0
+      },
+      "daily_total": 2,
+      "duration_days": 5,
+      "meal_timing": null,
+      "display_note": null,
+      "display_dose": "Sáng 1 Viên, Chiều 1 Viên",
+      "times_per_day": null,
+      "amount_per_intake": null,
+      "amount_text": null,
+      "suggested_slots": [],
+      "bottle_volume_ml": null,
+      "condition": null,
+      "min_interval_hours": null,
+      "max_interval_hours": null,
+      "needs_review": false,
+      "warnings": []
+    }
+  ],
+  "warnings": [],
+  "custom_reminder_times": {
+    "morning": "07:30",
+    "noon": "12:00",
+    "afternoon": "15:00"
+  },
+  "device_calendar_requested": true
+}

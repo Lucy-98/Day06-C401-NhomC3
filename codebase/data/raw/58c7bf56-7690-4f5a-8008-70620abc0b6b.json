@@ -1,0 +1,48 @@
+{
+  "data": {
+    "hospital_name": "SỞ Y TẾ THÀNH PHỐ ĐÀ NẴNG TRUNG TÂM Y TẾ QUẬN SƠN TRÀ",
+    "patient_name": "",
+    "patient_dob": "",
+    "patient_gender": "Nữ",
+    "patient_address": "Phường An Hải Đông, Quận Sơn Trà, Thành phố Đà Nẵng",
+    "diagnose": "Thấp không ảnh hưởng đến tim",
+    "table_information": [
+      {
+        "no": 1,
+        "medicine_name": "Penicilin(dưới dạng Phenoxymethylpenicilin Kali) 400.000 UI (Penicilin (dưới dạng Phenoxy methyl penicilin kali))",
+        "medicine_count": "30",
+        "medicine_guide": {
+          "summary": "Uống, Sáng 2 Viên, Trưa 2 Viên, Chiều 2 Viên -",
+          "use": "Uống",
+          "note": "",
+          "times": "3",
+          "type": "Viên",
+          "guide_morning": "2 Viên",
+          "guide_noon": "2 Viên",
+          "guide_afternoon": "2 Viên",
+          "guide_evening": "",
+          "use_count": "6"
+        }
+      },
+      {
+        "no": 2,
+        "medicine_name": "Paracetamol (acetaminophen) 500mg (Mypara 500)",
+        "medicine_count": "10",
+        "medicine_guide": {
+          "summary": "Uống , Sáng 1 Viên , Chiều 1 Viên -",
+          "use": "Uống",
+          "note": "",
+          "times": "2",
+          "type": "Viên",
+          "guide_morning": "1 Viên",
+          "guide_noon": "",
+          "guide_afternoon": "1 Viên",
+          "guide_evening": "",
+          "use_count": "2"
+        }
+      }
+    ]
+  },
+  "errorCode": null,
+  "errorMessage": null
+}

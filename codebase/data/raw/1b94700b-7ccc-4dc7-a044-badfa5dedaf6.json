@@ -1,0 +1,116 @@
+{
+  "data": {
+    "hospital_name": null,
+    "patient_name": "LIÊU NGUYỄN VÂN LAM",
+    "patient_dob": null,
+    "patient_gender": "Nữ",
+    "patient_address": "1G Bình Thạnh Thành Phố Hồ Chí Minh",
+    "diagnose": "H66.0 - Viêm tai giữa nung mủ cấp -VPQ",
+    "table_information": [
+      {
+        "no": 1,
+        "medicine_name": "Amoxicillin + Sulbactam (Bactamox 750mg)",
+        "medicine_count": "10 Viên",
+        "medicine_guide": {
+          "summary": "Uống mỗi ngày 2 lần, mỗi lần 1 viên",
+          "use": "Uống",
+          "note": null,
+          "times": "2 lần",
+          "type": "uống",
+          "guide_morning": "1 viên",
+          "guide_noon": null,
+          "guide_afternoon": "1 viên",
+          "guide_evening": null,
+          "use_count": "1 viên"
+        }
+      },
+      {
+        "no": 2,
+        "medicine_name": "Alpha chymotrypsin (CHYMODK 8,4)",
+        "medicine_count": "10 viên",
+        "medicine_guide": {
+          "summary": "Uống mỗi ngày 2 lần, mỗi lần 1 viên",
+          "use": "Uống",
+          "note": null,
+          "times": "2 lần",
+          "type": "uống",
+          "guide_morning": "1 viên",
+          "guide_noon": null,
+          "guide_afternoon": "1 viên",
+          "guide_evening": null,
+          "use_count": "1 viên"
+        }
+      },
+      {
+        "no": 3,
+        "medicine_name": "Ambroxol hydroclorid (Ambolyt Syrup 15mg/5ml 100ml)",
+        "medicine_count": "01 chai",
+        "medicine_guide": {
+          "summary": "Uống mỗi ngày 3 lần, mỗi lần 5 ml",
+          "use": "Uống",
+          "note": null,
+          "times": "3 lần",
+          "type": "uống",
+          "guide_morning": "5 ml",
+          "guide_noon": "5 ml",
+          "guide_afternoon": "5 ml",
+          "guide_evening": null,
+          "use_count": "5 ml"
+        }
+      },
+      {
+        "no": 4,
+        "medicine_name": "Lactobacillus acidophilus, Bifidobacteri (L-BIO-3D 300mg)",
+        "medicine_count": "10 Gói",
+        "medicine_guide": {
+          "summary": "Uống mỗi ngày 2 lần, mỗi lần 1 gói",
+          "use": "Uống",
+          "note": null,
+          "times": "2 lần",
+          "type": "uống",
+          "guide_morning": "1 gói",
+          "guide_noon": null,
+          "guide_afternoon": "1 gói",
+          "guide_evening": null,
+          "use_count": "1 gói"
+        }
+      },
+      {
+        "no": 5,
+        "medicine_name": "Paracetamol (AGIMOL 325)",
+        "medicine_count": "10 gói",
+        "medicine_guide": {
+          "summary": "Uống mỗi ngày 3 lần, mỗi lần 1 gói",
+          "use": "Uống",
+          "note": null,
+          "times": "3 lần",
+          "type": "uống",
+          "guide_morning": "1 gói",
+          "guide_noon": "1 gói",
+          "guide_afternoon": "1 gói",
+          "guide_evening": null,
+          "use_count": "1 gói"
+        }
+      },
+      {
+        "no": 6,
+        "medicine_name": "Dexamethason natri phosphate, Neomycin s (POEMA 10 mg+34.000 IU",
+        "medicine_count": "01 Lọ",
+        "medicine_guide": {
+          "summary": "NHỎ TAI HAI BÊN. Nhỏ mỗi ngày 2 lần, mỗi lần 3 giọt",
+          "use": "Nhỏ tai hai bên",
+          "note": null,
+          "times": "2 lần",
+          "type": "nhỏ",
+          "guide_morning": "3 giọt",
+          "guide_noon": null,
+          "guide_afternoon": "3 giọt",
+          "guide_evening": null,
+          "use_count": "3 giọt"
+        }
+      }
+    ]
+  },
+  "errorCode": null,
+  "errorMessage": null
+}

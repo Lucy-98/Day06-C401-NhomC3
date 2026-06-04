@@ -1,0 +1,116 @@
+{
+  "data": {
+    "hospital_name": "SỞ Y TẾ TP. HỒ CHÍ MINH BỆNH VIỆN BÌNH DÂN",
+    "patient_name": "TRẦN TRUNG",
+    "patient_dob": null,
+    "patient_gender": "Nam",
+    "patient_address": "Xã Bảo Bình, Huyện Cẩm Mỹ, Đồng Nai",
+    "diagnose": "Viêm dạ dày cấp khác",
+    "table_information": [
+      {
+        "no": 1,
+        "medicine_name": "YESOM 40 40mg (Esomeprazol 40mg)",
+        "medicine_count": "63",
+        "medicine_guide": {
+          "summary": "Ngày uống 3 lần, mỗi lần 1 Viên",
+          "use": "uống",
+          "note": "",
+          "times": "3 lần",
+          "type": "Viên",
+          "guide_morning": "1 Viên",
+          "guide_noon": "1 Viên",
+          "guide_afternoon": "",
+          "guide_evening": "1 Viên",
+          "use_count": "1 Viên"
+        }
+      },
+      {
+        "no": 2,
+        "medicine_name": "SUCRATE GEL (Sucralfate 1g (goi))",
+        "medicine_count": "63",
+        "medicine_guide": {
+          "summary": "Ngày uống 3 lần, mỗi lần 1 GÓI",
+          "use": "uống",
+          "note": "",
+          "times": "3 lần",
+          "type": "GÓI",
+          "guide_morning": "1 GÓI",
+          "guide_noon": "1 GÓI",
+          "guide_afternoon": "",
+          "guide_evening": "1 GÓI",
+          "use_count": "1 GÓI"
+        }
+      },
+      {
+        "no": 3,
+        "medicine_name": "ARTHUR (Trimebutine 200)",
+        "medicine_count": "63",
+        "medicine_guide": {
+          "summary": "Ngày uống 3 lần, mỗi lần 1 Viên",
+          "use": "uống",
+          "note": "",
+          "times": "3 lần",
+          "type": "Viên",
+          "guide_morning": "1 Viên",
+          "guide_noon": "1 Viên",
+          "guide_afternoon": "",
+          "guide_evening": "1 Viên",
+          "use_count": "1 Viên"
+        }
+      },
+      {
+        "no": 4,
+        "medicine_name": "PAPAZIE (magnesi aluminometasilicate,na bicarbonate,cao scopolia,alpha amylase,beta amulylase,protease)",
+        "medicine_count": "63",
+        "medicine_guide": {
+          "summary": "Ngày uống 3 lần, mỗi lần 1 Viên",
+          "use": "uống",
+          "note": "",
+          "times": "3 lần",
+          "type": "Viên",
+          "guide_morning": "1 Viên",
+          "guide_noon": "1 Viên",
+          "guide_afternoon": "",
+          "guide_evening": "1 Viên",
+          "use_count": "1 Viên"
+        }
+      },
+      {
+        "no": 5,
+        "medicine_name": "BIOCID MH 3.5+2g (Nhôm Hydroxide 3.5+2g, Magnesi Hydroxide 100ml)",
+        "medicine_count": "21",
+        "medicine_guide": {
+          "summary": "Ngày uống 3 lần, mỗi lần 1/3 Chai",
+          "use": "uống",
+          "note": "",
+          "times": "3 lần",
+          "type": "Chai",
+          "guide_morning": "1/3 Chai",
+          "guide_noon": "1/3 Chai",
+          "guide_afternoon": "",
+          "guide_evening": "1/3 Chai",
+          "use_count": "1/3 Chai"
+        }
+      },
+      {
+        "no": 6,
+        "medicine_name": "DIGLUMISAN (L-Arginine Hydrochloride 1000mg)",
+        "medicine_count": "63",
+        "medicine_guide": {
+          "summary": "Ngày uống 3 lần, mỗi lần 1 ỐNG",
+          "use": "uống",
+          "note": "",
+          "times": "3 lần",
+          "type": "ỐNG",
+          "guide_morning": "1 ỐNG",
+          "guide_noon": "1 ỐNG",
+          "guide_afternoon": "",
+          "guide_evening": "1 ỐNG",
+          "use_count": "1 ỐNG"
+        }
+      }
+    ]
+  },
+  "errorCode": null,
+  "errorMessage": null
+}
