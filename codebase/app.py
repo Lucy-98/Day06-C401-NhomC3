@@ -272,10 +272,222 @@ def render_result(response):
     ):
         st.json(response)
 
-
 # ==================================================
 # MAIN
 # ==================================================
+
+
+def render_analysis(response):
+
+    data = response["data"]
+    medicines = data["table_information"]
+
+    st.header("🤖 Phân Tích Điều Trị")
+
+    # ==================================
+    # TỔNG QUAN
+    # ==================================
+
+    total_medicines = len(medicines)
+
+    total_use_count = sum(
+        med["medicine_guide"]["use_count"]
+        for med in medicines
+    )
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.metric(
+            "💊 Số loại thuốc",
+            total_medicines
+        )
+
+    with col2:
+        st.metric(
+            "🕒 Tổng số lần dùng/ngày",
+            total_use_count
+        )
+
+    st.divider()
+
+    # ==================================
+    # SINH LỊCH NHẮC UỐNG THUỐC
+    # ==================================
+
+    reminders = []
+
+    for med in medicines:
+
+        guide = med["medicine_guide"]
+
+        if guide["guide_morning"]:
+            reminders.append({
+                "Giờ": "08:00",
+                "Thuốc": med["medicine_name"],
+                "Liều lượng":
+                    guide["guide_morning"]
+            })
+
+        if guide["guide_noon"]:
+            reminders.append({
+                "Giờ": "12:00",
+                "Thuốc": med["medicine_name"],
+                "Liều lượng":
+                    guide["guide_noon"]
+            })
+
+        if guide["guide_afternoon"]:
+            reminders.append({
+                "Giờ": "17:00",
+                "Thuốc": med["medicine_name"],
+                "Liều lượng":
+                    guide["guide_afternoon"]
+            })
+
+        if guide["guide_evening"]:
+            reminders.append({
+                "Giờ": "21:00",
+                "Thuốc": med["medicine_name"],
+                "Liều lượng":
+                    guide["guide_evening"]
+            })
+
+    reminders.sort(key=lambda x: x["Giờ"])
+
+    # ==================================
+    # BẢNG NHẮC UỐNG THUỐC
+    # ==================================
+
+    st.subheader("📅 Bảng Nhắc Uống Thuốc")
+
+    reminder_df = pd.DataFrame(reminders)
+
+    st.dataframe(
+        reminder_df,
+        use_container_width=True
+    )
+
+    st.divider()
+
+    # ==================================
+    # TIMELINE
+    # ==================================
+
+    st.subheader("⏰ Timeline Trong Ngày")
+
+    for item in reminders:
+
+        st.info(
+            f"""
+⏰ {item['Giờ']}
+
+💊 {item['Thuốc']}
+
+📦 {item['Liều lượng']}
+"""
+        )
+
+    st.divider()
+
+    # ==================================
+    # AI SUMMARY
+    # ==================================
+
+    st.subheader("🧠 Tóm Tắt Điều Trị")
+
+    medicine_names = [
+        med["medicine_name"]
+        for med in medicines
+    ]
+
+    unique_times = sorted(
+        list(
+            set(
+                item["Giờ"]
+                for item in reminders
+            )
+        )
+    )
+
+    st.success(
+        f"""
+Bệnh nhân hiện đang sử dụng {total_medicines} loại thuốc.
+
+Các thuốc gồm:
+
+{', '.join(medicine_names)}
+
+Tổng số lần sử dụng trong ngày:
+{total_use_count} lần.
+
+Các khung giờ cần uống thuốc:
+
+{', '.join(unique_times)}
+"""
+    )
+
+    st.divider()
+
+    # ==================================
+    # CẢNH BÁO
+    # ==================================
+
+    st.subheader("⚠️ Cảnh Báo")
+
+    if total_use_count >= 6:
+
+        st.warning(
+            """
+Lịch dùng thuốc tương đối dày.
+
+Khuyến nghị:
+
+• Bật thông báo nhắc uống thuốc
+
+• Không bỏ liều
+
+• Uống đúng khung giờ
+"""
+        )
+
+    else:
+
+        st.success(
+            """
+Lịch dùng thuốc đơn giản.
+
+Người dùng có thể dễ dàng tuân thủ.
+"""
+        )
+
+    st.divider()
+
+    # ==================================
+    # THỐNG KÊ THUỐC
+    # ==================================
+
+    st.subheader("📊 Thống Kê Thuốc")
+
+    stat_rows = []
+
+    for med in medicines:
+
+        stat_rows.append({
+            "Thuốc": med["medicine_name"],
+            "Số lượng":
+                med["medicine_count"],
+            "Số lần/ngày":
+                med["medicine_guide"]["use_count"]
+        })
+
+    stat_df = pd.DataFrame(stat_rows)
+
+    st.dataframe(
+        stat_df,
+        use_container_width=True
+    )
+
 
 def main():
 
@@ -362,9 +574,18 @@ def main():
 
     if "result" in st.session_state:
 
-        render_result(
-            st.session_state["result"]
-        )
+        response = st.session_state["result"]
+
+        tab1, tab2 = st.tabs([
+            "📄 Đơn Thuốc",
+            "🤖 Phân Tích Điều Trị"
+        ])
+
+        with tab1:
+            render_result(response)
+
+        with tab2:
+            render_analysis(response)
 
 
 if __name__ == "__main__":
