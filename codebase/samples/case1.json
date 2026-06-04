@@ -1,0 +1,41 @@
+{
+  "start_date": "2026-06-04",
+  "raw_json": {
+    "data": {
+      "hospital_name": "Sở Y tế Thành phố Đà Nẵng",
+      "patient_name": "HIDDEN",
+      "patient_gender": "Nam",
+      "diagnose": "Thấp không ảnh hưởng đến tim",
+      "table_information": [
+        {
+          "no": 1,
+          "medicine_name": "Penicilin(duo dạng Phenoxymethylpenicilin Kali) 400.000 UI",
+          "medicine_count": "30 Viên",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 2 Viên, Trưa 2 Viên, Chiều 2 Viên",
+            "use": "Uống",
+            "type": "Viên",
+            "guide_morning": "2 Viên",
+            "guide_noon": "2 Viên",
+            "guide_afternoon": "2 Viên",
+            "guide_evening": ""
+          }
+        },
+        {
+          "no": 2,
+          "medicine_name": "Paracetamol (acetaminophen) 500mg (Mypara 500)",
+          "medicine_count": "10 Viên",
+          "medicine_guide": {
+            "summary": "Uống: Sáng 1 Viên, Chiều 1 Viên",
+            "use": "Uống",
+            "type": "Viên",
+            "guide_morning": "1 Viên",
+            "guide_noon": "",
+            "guide_afternoon": "1 Viên",
+            "guide_evening": ""
+          }
+        }
+      ]
+    }
+  }
+}
